@@ -1,4 +1,3 @@
-# Ustawienia kodu Reeda-Salomona
 from GaloisField import GaloisField
 from ReedSolomonDecoder import ReedSolomonDecoder
 from ReedSolomonEncoder import ReedSolomonEncoder

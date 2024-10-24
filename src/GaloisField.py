@@ -17,6 +17,9 @@ class GaloisField:
         for i in range(self.field_size - 1, 2 * self.field_size - 1):
             self.exp_table[i] = self.exp_table[i - (self.field_size - 1)]
 
+        # Set log_table[0] to -1 to signify that log(0) is undefined
+        self.log_table[0] = -1
+
     def add(self, a, b):
         return a ^ b  # Dodawanie w GF(2^8) to operacja XOR
 
